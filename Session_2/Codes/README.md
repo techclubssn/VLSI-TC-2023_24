@@ -35,4 +35,4 @@ D_Flip_flop_posedge.v is a behavioral model of the same (except for some minor d
 ![image](https://github.com/techclubssn/VLSI-TC-2023_24/assets/93860462/ac5defa9-e63d-43d4-86bd-effcfca79eb5)
 
 
-It can be observed that Q is being updated only on the positive edges of clk, which makes it a more reliable storage element, eliminating the possibilities of racing etc., The asynchronous SET and RST perform set or reset perform the action immediately and independent of the clock, as soon as it is applied.
+It can be observed that Q is being updated only on the positive edges of clk (except during the SET and RST conditions), which makes it a more reliable storage element, eliminating the possibilities of racing etc., The asynchronous SET and RST inputs perform set or reset actions immediately and independent of the clock, as soon as they are applied.
