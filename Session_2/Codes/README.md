@@ -1,10 +1,10 @@
-## Difference between Latch and Flip-flop
+# Difference between Latch and Flip-flop
 
 A latch is a sequential element in which the state changes with change in the level of its inputs (level triggered). The basic NOR S-R latch and the NAND S-R latch (The S’R’ latch or the active-low S-R latch) is a good way to understand the storing property of latches.
 
 Negative D-Latch and Negative Edge Triggered D-Flip flop  are used for convenience in explanation and all the below mentioned points can be applied to all flip-flops and latches, such as S-R, J-K, T etc.,
 
-### D-Latch
+## D-Latch
 
 ![image](https://github.com/techclubssn/VLSI-TC-2023_24/assets/93860462/9b5886f7-2faa-4ea1-a2e2-65606e64cfa9)
 
@@ -19,7 +19,7 @@ D_Latch_Structural.v and D_Latch_Dataflow.v are the verilog implementations of N
 
 Note that, before the first marker, EN is high, and Q follows D, after the marker, EN is made low, and D is latched in Q, and during the period EN is low (before the second marker), any change in D is not reflected in Q. But once EN is made high again, Q starts following D.
 
-### D-Flip flop
+## D-Flip flop
 
   
 
