@@ -30,7 +30,7 @@ module Sequence_detector_Mealy(
         
     end 
     
-    always @(posedge Clk or posedge Rst) begin
+    always @(posedge Clk or posedge Rst) begin      // Asynchronous Reset
         if(Rst==1'b1)
             state<=2'b00;
         else
