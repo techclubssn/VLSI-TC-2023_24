@@ -14,7 +14,8 @@ The above circuit is a Negative D-Latch which means that the output Q follows in
 
 D_Latch_Structural.v and D_Latch_Dataflow.v are the verilog implementations of Negative D-Flip flop in structural and dataflow modeling respectively. Both give the same results on simulating. The below image is the result of simulating D_Latch_Structural.v in Vivado. 
 
-![image](https://www.notion.so/Session-2-965484290a6044b9a5622bf3905fedbe?pvs=4#f04a29515a1d488da3417978fe450b4e)
+![image](https://github.com/techclubssn/VLSI-TC-2023_24/assets/93860462/8409ed58-8938-4506-a80a-d6b992e135c1)
+
 
 Note that, before the first marker, EN is high, and Q follows D, after the marker, EN is made low, and D is latched in Q, and during the period EN is low (before the second marker), any change in D is not reflected in Q. But once EN is made high again, Q starts following D.
 
@@ -22,7 +23,8 @@ Note that, before the first marker, EN is high, and Q follows D, after the marke
 
   
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5b454901-597f-4fc7-ad88-5cdaccba61fa/159cc05a-9bf0-4ec6-9268-fb41c85e6bb7/Untitled.png)
+![image](https://github.com/techclubssn/VLSI-TC-2023_24/assets/93860462/26c61af1-da5d-46f8-8b28-01ad47107b1b)
+
 
 Image courtesy: [en.m.wikipedia.org/wiki/File:Edge_triggered_D_flip_flop_with_set_and_reset.svg](https://en.m.wikipedia.org/wiki/File:Edge_triggered_D_flip_flop_with_set_and_reset.svg)
 
@@ -30,6 +32,7 @@ The image above is of a positive edge triggered D-Flip flop, which asynchronous 
 
 D_Flip_flop_posedge.v is a behavioral model of the same (except for some minor differences which lie out of the valid working region). The below image is a result of simulation of D_Flip_flop_posedge.v.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5b454901-597f-4fc7-ad88-5cdaccba61fa/a6b6c1e6-34d6-47ff-ae6b-f36de549d811/Untitled.png)
+![image](https://github.com/techclubssn/VLSI-TC-2023_24/assets/93860462/ac5defa9-e63d-43d4-86bd-effcfca79eb5)
+
 
 It can be observed that Q is being updated only on the positive edges of clk, which makes it a more reliable storage element, eliminating the possibilities of racing etc., The asynchronous SET and RST perform set or reset perform the action immediately and independent of the clock, as soon as it is applied.
