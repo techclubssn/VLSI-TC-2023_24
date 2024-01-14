@@ -6,15 +6,14 @@ Negative D-Latch and Negative Edge Triggered D-Flip flop  are used for convenien
 
 ### D-Latch
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5b454901-597f-4fc7-ad88-5cdaccba61fa/6720ac4b-975a-45d8-8955-cf643d4e8829/Untitled.png)
-
+![image](https://github.com/techclubssn/VLSI-TC-2023_24/assets/93860462/9b5886f7-2faa-4ea1-a2e2-65606e64cfa9)
 Image Courtesy: www.build-electronic-circuits.com
 
 The above circuit is a Negative D-Latch which means that the output Q follows input D when Enable E is high, and when E goes low, the D value just before the event, is latched in Q, and once E goes back high, Q starts following D again.
 
 D_Latch_Structural.v and D_Latch_Dataflow.v are the verilog implementations of Negative D-Flip flop in structural and dataflow modeling respectively. Both give the same results on simulating. The below image is the result of simulating D_Latch_Structural.v in Vivado. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5b454901-597f-4fc7-ad88-5cdaccba61fa/675a36e0-ccc6-47ba-8962-0ccbedb37e88/Untitled.png)
+https://www.notion.so/Session-2-965484290a6044b9a5622bf3905fedbe?pvs=4#f04a29515a1d488da3417978fe450b4e
 
 Note that, before the first marker, EN is high, and Q follows D, after the marker, EN is made low, and D is latched in Q, and during the period EN is low (before the second marker), any change in D is not reflected in Q. But once EN is made high again, Q starts following D.
 
